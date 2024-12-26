@@ -1,5 +1,8 @@
 import express from 'express';
 import { connectDB } from './config/db.js';
+import userRoutes from './routes/userRoute.js'
+import authRoutes from './routes//auth.js'
+
 
 
 const app = express()
@@ -7,6 +10,7 @@ const app = express()
 app.get('/fabnest',(req,res)=>{
     
 })
+
 
 console.log(process.env.MONGO_URL)
 
